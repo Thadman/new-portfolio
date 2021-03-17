@@ -1,5 +1,7 @@
 import tw from "twin.macro"
 import React from "react"
+import { Link } from "gatsby"
+import HomePage from "./home-page"
 
 import SEO from "../components/seo"
 import Layout from "../components/layout"
@@ -65,7 +67,8 @@ export default function Index() {
                 <Icon src={logo} alt={`${name} Logo`} key={index} />
               ))}
           </Logos>
-          <Heading>Hello, world!</Heading>
+          <Heading>Hello, Thad</Heading>
+          <Link to="/home-page/">Click here for the homepage &rarr;</Link>
           <Text>
             Welcome to the Tailwind CSS{" "}
             <span role="img" aria-label="and">
