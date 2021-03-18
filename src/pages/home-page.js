@@ -25,7 +25,7 @@ const HomePage = () => {
         <Wrapper>
           <Heading>Hi, I am Thad. I'm a Developer</Heading>
           <Paragraph>
-            <Link to="/">Look at my dev work &rarr;</Link>
+            <Link to="/work/">Look at my work &rarr;</Link>
           </Paragraph>
         </Wrapper>
       </Container>
