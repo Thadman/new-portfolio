@@ -1,6 +1,6 @@
 const data = [
   {
-    title: "Bens Site",
+    title: "Bayview Design",
     content:
       "This was a site that i made for Ben. He was after something sleek and wanted a dark theme throughout. This was a site that i made for Ben. He was after something sleek and wanted a dark theme throughout",
     link: "bayviewdesign.co.nz",
