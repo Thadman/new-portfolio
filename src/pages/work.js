@@ -9,7 +9,7 @@ const Container = tw.div`
   h-screen w-full flex flex-col 
 `
 const Wrapper = styled.div`
-  ${tw`w-4/5 flex flex-row flex-wrap justify-between`}
+  ${tw` w-4/5 grid grid-cols-3 gap-4`}
   margin: 0 auto;
 `
 const Header = styled.h1`
@@ -17,7 +17,9 @@ const Header = styled.h1`
   padding-left: 10%
 `
 const Card = styled.div`
-  ${tw`w-1/3 flex flex-col rounded-md shadow-xl border-2 border-gray-300`}
+  ${tw`flex flex-col flex-wrap rounded-md shadow-xl border-2 border-gray-300`}
+  height: 100%;
+  margin: 0 auto;
 `
 const CardHeader = tw.h1`
   text-3xl pt-4 px-4
@@ -25,7 +27,6 @@ const CardHeader = tw.h1`
 const CardContent = tw.p`
   text-sm px-4 pt-2
 `
-
 const Button = tw.button`
   mt-6 p-2 pl-4 text-left border-t-2 border-b-2 border-gray-300 
 `
