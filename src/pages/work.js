@@ -1,5 +1,6 @@
 import React from "react"
 import tw, { styled } from "twin.macro"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import data from "../data/data"
 
@@ -17,7 +18,7 @@ const Header = styled.h1`
   padding-left: 10%
 `
 const Card = styled.div`
-  ${tw`flex flex-col flex-wrap rounded-md shadow-xl border-2 border-gray-300`}
+  ${tw`flex flex-col flex-wrap content-end justify-end rounded-md shadow-xl border-2 border-gray-300`}
   height: 100%;
   margin: 0 auto;
 `
@@ -27,14 +28,32 @@ const CardHeader = tw.h1`
 const CardContent = tw.p`
   text-sm px-4 pt-2
 `
-const Button = tw.button`
-  mt-6 p-2 pl-4 text-left border-t-2 border-b-2 border-b-2 border-gray-300 
+const Button = styled.button`
+  ${tw`mt-6 p-2 pl-4 text-left border-t-2 border-b-2 border-b-2 border-gray-300`}
 `
 const Footer = styled.footer`
-  ${tw`w-full h-32 border-t-2 border-b-2 border-gray-300 text-3xl`}
+  ${tw`w-full h-32 border-t-2 border-b-2 border-gray-300 text-3xl flex justify-center items-center `}
   margin-top: auto;
-  padding-left: 10%;
 `
+
+const FooterContent = styled.div`
+  w-auto
+`
+
+const Icon = tw.img`
+  h-10
+`
+
+const logos = [
+  {
+    name: "github",
+    logo: require("../images/github.svg"),
+  },
+  {
+    name: "linkedin",
+    logo: require("../images/linkedin.jpeg"),
+  },
+]
 
 const Work = () => {
   return (
@@ -50,7 +69,13 @@ const Work = () => {
             </Card>
           ))}
         </Wrapper>
-        <Footer>This is the footer</Footer>
+        <Footer>
+          <FooterContent>
+            {logos.map(({ name, logo }, index) => (
+              <Icon src={logo} alt={name} key={index} />
+            ))}
+          </FooterContent>
+        </Footer>
       </Container>
     </Layout>
   )
