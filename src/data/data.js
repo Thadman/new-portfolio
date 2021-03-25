@@ -20,13 +20,13 @@ const data = [
   {
     title: "Wine App",
     content:
-      "This was a project that we were tasked to do for Coder Academy. This was my first project that i completed that was hosted live. Great experience learning how to host on Heroku as well as learning MVC within Rails. Used Rails and Bootstrap on the FE.  ",
+      "This was a project that we were tasked to do for Coder Academy. This was my first project that i completed that was hosted live on Heroku. Great experience learning how to host on Heroku, and learning integrating DBs, as well as learning MVC within Rails. Used Rails and Bootstrap on the FE.  ",
     site: "https://stormy-falls-83343.herokuapp.com/",
   },
   {
     title: "Basketball App",
     content:
-      "This was a project i worked on for a week, Using a basketball API, set up a search query and displayed the last 10 games f data for the player, as well as having some players that were already available to view. Good small project to practice new concepts and try some more features out.  ",
+      "This was a project i worked on for a week, Using a basketball API, set up a search query and displayed the last 10 games of data for the player, as well as having some players that were already available to view. Good small project to practice new concepts and try some more features out.  ",
     site: "https://github.com/Thadman/react-grid-bball",
   },
 ]

@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import tw, { styled } from "twin.macro"
 import Layout from "../components/layout"
 
@@ -12,11 +13,15 @@ const Wrapper = styled.div`
 `
 
 const Header = tw.h1`
-  text-3xl pt-8 mb-8
+  text-4xl pt-8 mb-8
 `
 
 const Content = tw.p`
-  text-lg 
+  text-xl
+`
+
+const BackToWorkArrow = tw.p`
+  text-xl pt-8
 `
 
 const About = () => (
@@ -25,12 +30,16 @@ const About = () => (
       <Wrapper>
         <Header>About</Header>
         <Content>
-          I'm Thad. I am a Web Developer in Melbourne, Victoria. Helping
-          customers with an online presence by building blazing fast websites
-          and web apps, as well as helping with the design process. I use JS,
-          Ruby. ReactJS and GatsbyJS with Styled Components and Tailwind on
-          Front End. Ruby on Rails on the backend.{" "}
+          I'm Thad. <br />
+          <br /> I am a Web Developer in Melbourne, Victoria. Helping customers
+          with an online presence by building blazing fast websites and web
+          apps, as well as helping with the design process. I use JS, Ruby.
+          ReactJS and GatsbyJS with Styled Components and Tailwind on Front End.
+          Ruby on Rails on the backend.{" "}
         </Content>
+        <BackToWorkArrow>
+          <Link to="/work/">&larr; Work</Link>
+        </BackToWorkArrow>
       </Wrapper>
     </Container>
   </Layout>
