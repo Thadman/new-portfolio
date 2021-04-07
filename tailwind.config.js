@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme")
+
 module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
@@ -5,7 +7,10 @@ module.exports = {
   },
   purge: ["./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    screens: {
+      xs: "475px",
+      ...defaultTheme.screens,
+    },
   },
   variants: {},
   plugins: [],

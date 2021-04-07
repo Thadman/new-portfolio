@@ -1,7 +1,7 @@
 import tw from "twin.macro"
 import React from "react"
 import { Link } from "gatsby"
-import HomePage from "./home-page"
+// import HomePage from "./home-page"
 
 import SEO from "../components/seo"
 import Layout from "../components/layout"
@@ -61,24 +61,11 @@ export default function Index() {
       <Wrapper>
         <SEO title="Welcome" />
         <Main>
-          <Logos>
-            {logos &&
-              logos.map(({ name, logo }, index) => (
-                <Icon src={logo} alt={`${name} Logo`} key={index} />
-              ))}
-          </Logos>
           <Heading>Hello, Thad</Heading>
           <Link to="/home-page/">Click here for the homepage &rarr;</Link>
-          <Text>
-            Welcome to the Tailwind CSS{" "}
-            <span role="img" aria-label="and">
-              ➕
-            </span>{" "}
-            Emotion Starter for Gatsby.
-          </Text>
           <Footer>
             <a
-              href="https://github.com/pauloelias/gatsby-tailwind-emotion-starter"
+              href="https://github.com/Thadman"
               target="_blank"
               rel="noopener noreferrer"
             >

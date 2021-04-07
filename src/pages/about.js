@@ -4,12 +4,11 @@ import tw, { styled } from "twin.macro"
 import Layout from "../components/layout"
 
 const Container = styled.div`
-  ${tw`h-screen w-full flex flex-col`}
+  ${tw`w-full flex flex-col font-mono pb-4`}
 `
 const Wrapper = styled.div`
-  ${tw` w-4/5`}
+  ${tw` w-full px-8`}
   margin: 0 auto;
-  height: 70%;
 `
 
 const Header = tw.h1`
@@ -19,9 +18,11 @@ const Header = tw.h1`
 const Content = tw.p`
   text-xl
 `
-
-const BackToWorkArrow = tw.p`
-  text-xl pt-8
+const OtherWrapper = styled.div`
+  ${tw`w-full flex`}
+`
+const BackToOther = tw.p`
+  text-xl pt-8 mr-4 hover:underline
 `
 
 const About = () => (
@@ -37,9 +38,14 @@ const About = () => (
           ReactJS and GatsbyJS with Styled Components and Tailwind on Front End.
           Ruby on Rails on the backend.{" "}
         </Content>
-        <BackToWorkArrow>
-          <Link to="/work/">&larr; Work</Link>
-        </BackToWorkArrow>
+        <OtherWrapper>
+          <BackToOther>
+            <Link to="/work/">&larr; Work</Link>
+          </BackToOther>
+          <BackToOther>
+            <Link to="/form/">&larr; Contact</Link>
+          </BackToOther>
+        </OtherWrapper>
       </Wrapper>
     </Container>
   </Layout>
