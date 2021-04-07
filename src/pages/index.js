@@ -61,7 +61,7 @@ export default function Index() {
       <Wrapper>
         <SEO title="Welcome" />
         <Main>
-          <Heading>Hello, Thad</Heading>
+          <Heading>Hello</Heading>
           <Link to="/home-page/">Click here for the homepage &rarr;</Link>
           <Footer>
             <a

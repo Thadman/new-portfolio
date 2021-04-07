@@ -3,7 +3,6 @@ import tw, { styled } from "twin.macro"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import data from "../data/data"
-import AlertBox from "./alert-box"
 
 console.log(data)
 
@@ -54,10 +53,6 @@ const logos = [
 ]
 
 const Work = () => {
-  const [modal, setModal] = useState(false)
-
-  console.group(modal)
-
   return (
     <Layout>
       <Container>

@@ -2,7 +2,7 @@ import React from "react"
 import tw, { styled } from "twin.macro"
 
 const Wrapper = styled.div`
-  ${tw`absolute h-auto w-20`}
+  ${tw`absolute h-32 w-20`}
 `
 
 const AlertBox = () => {

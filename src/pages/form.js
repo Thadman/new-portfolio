@@ -1,5 +1,6 @@
 import tw, { styled } from "twin.macro"
 import React, { useState } from "react"
+import { Link } from "gatsby"
 
 const Container = tw.div`
   w-screen h-screen flex justify-center bg-gray-100
@@ -37,6 +38,13 @@ const Textarea = tw.textarea`
 `
 const Button = tw.button`
   w-4/12 border border-gray-300 mt-6 rounded-md shadow-sm text-sm
+`
+
+const HeaderWrapper = styled.div`
+  ${tw`w-full flex`}
+`
+const BackToOther = tw.p`
+  text-xl pt-8 mr-4 hover:underline px-4
 `
 
 const Contact = () => {
@@ -79,6 +87,14 @@ const Contact = () => {
           <Content>
             Fill in the form below and i will be in contact shortly
           </Content>
+          <HeaderWrapper>
+            <BackToOther>
+              <Link to="/about/">&larr; About</Link>
+            </BackToOther>
+            <BackToOther>
+              <Link to="/work/">&larr; Work</Link>
+            </BackToOther>
+          </HeaderWrapper>
         </Grid1>
         <Grid2>
           <Div>

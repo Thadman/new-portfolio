@@ -23,7 +23,7 @@ const HomePage = () => {
     <Layout>
       <Container>
         <Wrapper>
-          <Heading>Hi, I am Thad. I'm a Developer</Heading>
+          <Heading>Hi, I'm Thad. I'm a Dev</Heading>
           <Paragraph>
             <Link to="/work/">Look at my work &rarr;</Link>
           </Paragraph>
