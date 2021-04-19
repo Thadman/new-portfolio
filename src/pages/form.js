@@ -12,7 +12,7 @@ const Grid1 = tw.div`
   px-1
 `
 const Header = tw.h2`
-  text-xl tracking-wide font-mono py-4 px-4
+  text-3xl tracking-wide font-mono py-4 px-4
 `
 const Content = tw.p`
   text-sm px-4
@@ -37,14 +37,13 @@ const Textarea = tw.textarea`
   rounded-md shadow-sm border border-gray-300 mt-1 w-11/12 lg:h-32 px-2
 `
 const Button = tw.button`
-  w-4/12 border border-gray-300 mt-6 rounded-md shadow-sm text-sm
+  w-2/12 border border-gray-300 mt-6 rounded-md shadow-sm text-sm p-1 hover:bg-gray-100
 `
-
 const HeaderWrapper = styled.div`
   ${tw`w-full flex`}
 `
 const BackToOther = tw.p`
-  text-xl pt-8 mr-4 hover:underline px-4
+  hover:underline px-4 text-xl tracking-wide font-mono py-4
 `
 
 const Contact = () => {

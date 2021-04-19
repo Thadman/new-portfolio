@@ -7,7 +7,7 @@ import data from "../data/data"
 console.log(data)
 
 const Container = tw.div`
-  h-screen w-full flex flex-col bg-gray-100 font-mono
+ w-full flex flex-col bg-gray-100 font-mono
 `
 const Wrapper = styled.div`
   ${tw`grid lg:grid-cols-3 gap-4 px-4 md:grid-cols-2 gap-4 sm:grid grid-cols-1 gap-4`}
@@ -20,22 +20,23 @@ const Header = styled.h1`
   ${tw`text-3xl pt-8 px-8 mb-8 hover:underline`}
 `
 const Card = styled.div`
-  ${tw`flex flex-col flex-wrap justify-end rounded-md shadow-xl border-2 border-gray-300`};
-  // height: 100%;
+  ${tw`flex flex-col justify-between  rounded-md shadow-xl border-2 border-gray-300 mb-4`};
+`
+const CardDiv = tw.div`
 `
 const CardHeader = tw.h1`
-  text-3xl px-4 
+  text-xl px-4 pt-1
 `
 const CardContent = tw.p`
-  text-xs px-4 pt-2 flex flex-wrap
+   px-4 pt-2 flex-wrap text-sm
 `
+const ButtonDiv = styled.div``
 const Button = styled.button`
-  ${tw`mt-6 p-2 pl-4 text-left border-t-2 border-b-2 border-b-2 border-gray-300`}
+  ${tw`mt-6 p-2 pl-4 text-left border-t-2 border-b-2 border-b-2 border-gray-300 hover:bg-gray-200`};
+  width: 100%;
 `
 const Footer = styled.div`
   ${tw`w-full border-t-2 border-b-2 border-gray-300 text-3xl flex justify-center items-center self-end p-4 bg-gray-100`}
-  bottom: 0;
-  position: fixed;
 `
 const Icon = tw.img`
   h-10 mr-4
@@ -45,10 +46,12 @@ const logos = [
   {
     name: "github",
     logo: require("../images/github.svg"),
+    link: "https://github.com/Thadman",
   },
   {
     name: "linkedin",
     logo: require("../images/linkedin.jpeg"),
+    link: "https://www.linkedin.com/in/thad-hoskin-4175aa1b1/",
   },
 ]
 
@@ -68,9 +71,13 @@ const Work = () => {
         <Wrapper>
           {data.map((item, index) => (
             <Card key={index}>
-              <CardHeader>{item.title}</CardHeader>
-              <CardContent>{item.content}</CardContent>
-              <Button onClick={() => alert("Good work")}>View Site</Button>
+              <CardDiv>
+                <CardHeader>{item.title}</CardHeader>
+                <CardContent>{item.content}</CardContent>
+              </CardDiv>
+              <ButtonDiv>
+                <Button onClick={() => alert("Good work")}>View Site</Button>
+              </ButtonDiv>
             </Card>
           ))}
         </Wrapper>
