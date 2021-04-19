@@ -1,5 +1,5 @@
 import React from "react"
-import tw from "twin.macro"
+import tw, { styled } from "twin.macro"
 import Layout from "../components/layout"
 import { Link } from "gatsby"
 
@@ -12,10 +12,10 @@ const Paragraph = tw.h5`
 `
 
 const Container = tw.div`
-   h-screen bg-gray-200 flex flex-col justify-start pt-10
+  h-screen bg-gray-200 flex flex-col justify-start pt-10
 `
 const Wrapper = tw.div`
-   w-3/5
+   w-full
 `
 
 const HomePage = () => {

@@ -3,19 +3,19 @@ const data = [
     title: "Bayview Design",
     content:
       "This was a site that i made for Ben. He was after something sleek and wanted a dark theme throughout. This was a site that i made for Ben. He was after something sleek and wanted a dark theme throughout",
-    link: "bayviewdesign.co.nz",
-  },
-  {
-    title: "POJOmon",
-    content:
-      "This was a project made for Coder Academy using Ruby on Rails and React. It is a sort-of Digimon clone, needing to feed, clean and look after, disregarding this will ultimately end in the untimely death of the POJOmon",
-    link: "pojomon.netlify.com",
+    link: "https://www.bayviewdesign.co.nz",
   },
   {
     title: "Basketball App",
     content:
       "This was a project i worked on for a week, Using a basketball API, set up a search query and displayed the last 10 games of data for the player, as well as having some players that were already available to view. Good small project to practice new concepts and try some more features out.  ",
     link: "https://github.com/Thadman/react-grid-bball",
+  },
+  {
+    title: "POJOmon",
+    content:
+      "This was a project made for Coder Academy using Ruby on Rails and React. It is a sort-of Digimon clone, needing to feed, clean and look after, disregarding this will ultimately end in the untimely death of the POJOmon",
+    link: "www.pojomon.netlify.com",
   },
   {
     title: "Otago Sheet Metal",

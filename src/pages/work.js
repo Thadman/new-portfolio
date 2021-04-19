@@ -16,8 +16,8 @@ const Wrapper = styled.div`
 const HeaderWrapper = styled.div`
   ${tw`w-full flex flex-wrap`}
 `
-const Header = styled.h1`
-  ${tw`text-3xl pt-8 px-8 mb-8 hover:underline`}
+const Header = tw.h1`
+  lg:text-3xl pt-8 px-8 mb-8 hover:underline
 `
 const Card = styled.div`
   ${tw`flex flex-col justify-between  rounded-md shadow-xl border-2 border-gray-300 mb-4`};
@@ -76,7 +76,9 @@ const Work = () => {
                 <CardContent>{item.content}</CardContent>
               </CardDiv>
               <ButtonDiv>
-                <Button onClick={() => alert("Good work")}>View Site</Button>
+                <Button onClick={() => window.open(`${item.link}`, "_blank")}>
+                  View Site
+                </Button>
               </ButtonDiv>
             </Card>
           ))}

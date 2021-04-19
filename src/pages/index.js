@@ -1,7 +1,6 @@
-import tw from "twin.macro"
+import tw, { styled } from "twin.macro"
 import React from "react"
 import { Link } from "gatsby"
-// import HomePage from "./home-page"
 
 import SEO from "../components/seo"
 import Layout from "../components/layout"
@@ -46,13 +45,14 @@ const Logos = tw.div`
 const Icon = tw.img`
   h-10
 `
-
 const Footer = tw.footer`
   mt-6 text-center
 `
-
 const SmallIcon = tw.img`
   inline-block h-6
+`
+const newFooter = styled.div`
+  ${tw`w-full border-t-2 border-b-2 border-gray-300 text-3xl flex justify-center items-center self-end p-4 bg-gray-100`}
 `
 
 export default function Index() {
@@ -63,15 +63,6 @@ export default function Index() {
         <Main>
           <Heading>Hello</Heading>
           <Link to="/home-page/">Click here for the homepage &rarr;</Link>
-          <Footer>
-            <a
-              href="https://github.com/Thadman"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <SmallIcon src={github} alt="Github Icon" />
-            </a>
-          </Footer>
         </Main>
       </Wrapper>
     </Layout>
